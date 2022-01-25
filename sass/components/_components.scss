@@ -1,0 +1,41 @@
+.bouton-fonctionnement{
+    width: 86%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1.1rem;
+    @include box-shadow;
+    @include background-clair;
+    @include border-radius;
+
+    &__rond{
+        background-color: $primary;
+        color: white;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.3rem;
+        margin-left: -0.7rem;
+    }
+}
+
+button{
+    background: linear-gradient(150deg, #FF79DA, #9356DC);
+    border-style: none;
+    border-radius: 45px;
+    color: white;
+    @include box-shadow;
+}
+
+.section2__article{
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-gap: 1rem;
+    width: 90%;
+    margin: auto;
+}

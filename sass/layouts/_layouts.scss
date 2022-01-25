@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.section1{
+    &__lieu{
+        border-top: solid lightgrey;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-color1;
+        margin-top: 0.8rem;
+    }
+    &__reservation{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 3rem;
+        padding-top: 2rem;
+        @include background-clair;
+    }
+}
+
+.section2{
+    @include background-clair;
+}

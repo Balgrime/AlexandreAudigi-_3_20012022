@@ -1,0 +1,11 @@
+@mixin box-shadow {
+    box-shadow: 4px 4px 20px lightgrey;
+}
+
+@mixin background-clair {
+    background-color: $background-color2;
+}
+
+@mixin border-radius {
+    border-radius: 15px;
+}
