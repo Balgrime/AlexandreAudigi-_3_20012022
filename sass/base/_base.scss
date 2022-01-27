@@ -1,5 +1,14 @@
+* {
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+}
+
 *{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 100%;
 }
 
 h1, h2, h3, p, a{
@@ -9,7 +18,7 @@ h1, h2, h3, p, a{
 }
 
 h1{
-    font-family: Shrikhand;
+    font-family: 'Shrikhand';
 }
 
 img{

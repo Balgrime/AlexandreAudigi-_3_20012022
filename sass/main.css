@@ -1,5 +1,16 @@
+@charset "UTF-8";
 * {
-  font-family: Roboto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* box-sizing est appliqué à tous les éléments */
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 100%;
 }
 
 h1, h2, h3, p, a {
@@ -9,7 +20,7 @@ h1, h2, h3, p, a {
 }
 
 h1 {
-  font-family: Shrikhand;
+  font-family: 'Shrikhand';
 }
 
 img {
@@ -76,7 +87,7 @@ header {
 }
 
 .section1__reservation--titre {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-weight: 900;
 }
 
@@ -150,15 +161,17 @@ button .button-text {
 }
 
 .section2__article {
+  height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 3fr 1.1fr;
-      grid-template-rows: 3fr 1.1fr;
+  -ms-grid-rows: 2.3fr 1fr;
+      grid-template-rows: 2.3fr 1fr;
 }
 
 .section2__article--img {
+  max-height: 5rem;
+  min-height: 100%;
   border-radius: 15px 15px 0 0;
-  min-height: 160px;
 }
 
 .section2__article__nouveau {

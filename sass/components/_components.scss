@@ -46,11 +46,13 @@ button{
 }
 
 .section2__article{
+    height: 100%;
     display: grid;
-    grid-template-rows: 3fr 1.1fr;
+    grid-template-rows: 2.3fr 1fr;
     &--img{
+        max-height: 5rem;
+        min-height: 100%;
         border-radius: 15px 15px 0 0;
-        min-height: 160px;
     }
     &__nouveau{
         position: absolute;
