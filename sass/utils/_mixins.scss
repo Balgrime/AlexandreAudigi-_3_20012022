@@ -1,5 +1,5 @@
 @mixin box-shadow {
-    box-shadow: 4px 4px 20px lightgrey;
+    box-shadow: 4px 4px 15px grayscale($color: #b9b9b9);
 }
 
 @mixin background-clair {
@@ -8,4 +8,8 @@
 
 @mixin border-radius {
     border-radius: 15px;
+}
+
+@mixin darker-tertiary($color: $tertiary) {
+    color: darken($color, $amount: 45%);
 }

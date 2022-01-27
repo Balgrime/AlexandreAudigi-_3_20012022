@@ -22,6 +22,14 @@
         margin-right: 1.3rem;
         margin-left: -0.7rem;
     }
+
+    &__typo{
+        font-weight: 700;
+    }
+
+    &__icone{
+        color: grey;
+    }
 }
 
 button{
@@ -30,12 +38,37 @@ button{
     border-radius: 45px;
     color: white;
     @include box-shadow;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    .button-text{
+        color: white;
+    }
 }
 
 .section2__article{
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr;
-    grid-gap: 1rem;
-    width: 90%;
-    margin: auto;
+    grid-template-rows: 3fr 1.1fr;
+    &--img{
+        border-radius: 15px 15px 0 0;
+        min-height: 160px;
+    }
+    &__nouveau{
+        position: absolute;
+        justify-self: end;
+        background-color: $tertiary;
+        margin: 1rem;
+        border-radius: 2px;
+        &>p{
+            margin: 0.4rem 0.8rem 0.4rem 0.8rem;
+            font-weight: 700;
+            @include darker-tertiary;
+        }
+    }
+}
+
+.article-description{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
