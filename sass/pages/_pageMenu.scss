@@ -53,8 +53,8 @@ header{
         }
     }
     &__liste{
-        padding-top: 2.3rem;
         &__titre{
+            margin-top: 3.5rem;
             font-size: 1.1rem;
             font-weight: 300;
             &>span{
@@ -64,6 +64,7 @@ header{
         }
         &__article{
             padding: 0.7rem;
+            padding-right: 1.7rem;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;

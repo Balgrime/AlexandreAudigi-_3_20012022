@@ -20,6 +20,7 @@ header{
         }
     }
     &__reservation{
+        margin-bottom: 3rem;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -38,6 +39,7 @@ header{
 }
 
 .section2{
+    margin-top: 5rem;
     @include background-clair;
     padding-top: 2.5rem;
     padding-bottom: 4rem;

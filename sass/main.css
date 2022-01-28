@@ -97,6 +97,7 @@ header {
 }
 
 .section1__reservation {
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +124,7 @@ header {
 }
 
 .section2 {
+  margin-top: 5rem;
   background-color: #f6f6f6;
   padding-top: 2.5rem;
   padding-bottom: 4rem;
@@ -196,6 +198,7 @@ header {
   border-radius: 18px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .bouton-fonctionnement__rond {
@@ -402,11 +405,8 @@ header > a {
   display: none;
 }
 
-.section3__liste {
-  padding-top: 2.3rem;
-}
-
 .section3__liste__titre {
+  margin-top: 3.5rem;
   font-size: 1.1rem;
   font-weight: 300;
 }
@@ -418,6 +418,7 @@ header > a {
 
 .section3__liste__article {
   padding: 0.7rem;
+  padding-right: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
