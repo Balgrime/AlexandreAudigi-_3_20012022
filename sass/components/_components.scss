@@ -65,6 +65,15 @@ button{
         min-height: 100%;
         border-radius: 15px 15px 0 0;
     }
+    .fa-heart{
+        font-size: 1.8rem;
+    }
+    .far{
+        color: grey;
+    }
+    .fas{
+        display: none;
+    }
     &__nouveau{
         position: absolute;
         justify-self: end;
@@ -84,4 +93,9 @@ button{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 1.3rem 1rem 0.8rem;
+    & h3{
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
 }

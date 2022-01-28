@@ -24,8 +24,16 @@ h1 {
   font-size: 1.7rem;
 }
 
+h2 {
+  margin-left: 1rem;
+}
+
 p {
   margin: 0;
+}
+
+.light {
+  font-weight: 300;
 }
 
 img {
@@ -68,9 +76,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   background-color: #eaeaea;
   margin-top: 0.8rem;
   font-weight: 700;
@@ -80,6 +88,7 @@ header {
 
 .section1__lieu > p {
   color: #353535;
+  margin-left: 1.5rem;
 }
 
 .section1__reservation {
@@ -110,6 +119,7 @@ header {
 
 .section2 {
   background-color: #f6f6f6;
+  padding-top: 2.5rem;
   padding-bottom: 4rem;
 }
 
@@ -138,6 +148,10 @@ header {
           align-items: center;
 }
 
+.footer__ligne .fa-hands-helping {
+  font-size: 11px;
+}
+
 .footer__logo {
   font-family: 'Shrikhand';
   font-size: 1.4rem;
@@ -146,12 +160,12 @@ header {
 
 .footer a, .footer p {
   color: white;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .footer a {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .footer a > p {
@@ -252,6 +266,18 @@ button .button-text {
   border-radius: 15px 15px 0 0;
 }
 
+.section2__article .fa-heart {
+  font-size: 1.8rem;
+}
+
+.section2__article .far {
+  color: grey;
+}
+
+.section2__article .fas {
+  display: none;
+}
+
 .section2__article__nouveau {
   position: absolute;
   -ms-grid-column-align: end;
@@ -281,5 +307,11 @@ button .button-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem 1.3rem 1rem 0.8rem;
+}
+
+.article-description h3 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 /*# sourceMappingURL=main.css.map */
