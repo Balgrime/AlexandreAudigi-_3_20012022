@@ -61,7 +61,7 @@ article {
   margin: 1rem;
 }
 
-@media (min-width: 750px) and (max-width: 992px) {
+@media (min-width: 750px) and (max-width: 991px) {
   .responsive-modifier {
     max-width: 43.5rem;
     margin: auto;
@@ -70,7 +70,7 @@ article {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .responsive-modifier {
     max-width: 43.5rem;
     margin: auto;
@@ -150,7 +150,7 @@ header {
   font-weight: 300;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .section1 {
     width: 75%;
     margin: auto;
@@ -170,7 +170,7 @@ header {
   }
 }
 
-@media (min-width: 750px) and (max-width: 992px) {
+@media (min-width: 750px) and (max-width: 991px) {
   .section1__fonctionnement {
     width: 70%;
     margin: auto;
@@ -180,7 +180,7 @@ header {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .section1__fonctionnement {
     display: -ms-grid;
     display: grid;
@@ -219,7 +219,7 @@ header {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 750px) and (max-width: 992px) {
+@media (min-width: 750px) and (max-width: 991px) {
   .section2 > h2 {
     text-align: center;
   }
@@ -229,7 +229,7 @@ header {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .section2 {
     -webkit-box-shadow: 4px 4px 15px #b9b9b9;
             box-shadow: 4px 4px 15px #b9b9b9;
@@ -273,7 +273,7 @@ header {
           flex-flow: column nowrap;
 }
 
-@media (min-width: 750px) and (max-width: 992px) {
+@media (min-width: 750px) and (max-width: 991px) {
   .footer {
     display: -ms-grid;
     display: grid;
@@ -282,7 +282,7 @@ header {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .footer {
     border-radius: 20px 20px 0 0;
     width: 80%;
@@ -357,7 +357,7 @@ header {
   margin-left: 1rem;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .footer a > p {
     margin-left: 0.2rem;
   }
@@ -385,13 +385,13 @@ header {
   margin-top: 1.5rem;
 }
 
-@media (min-width: 750px) and (max-width: 992px) {
+@media (min-width: 750px) and (max-width: 991px) {
   .bouton-fonctionnement {
     max-width: 30rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .bouton-fonctionnement {
     padding: 0.4rem 0 0.4rem 0;
     -ms-grid-row: 2;
@@ -440,7 +440,7 @@ header {
       grid-column-start: 1;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .bouton-fonctionnement__rond {
     margin: 0;
     -webkit-box-ordinal-group: 4;
@@ -472,7 +472,7 @@ header {
       grid-row-start: 1;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .bouton-fonctionnement__icone {
     font-size: 1.6rem;
   }
@@ -639,7 +639,7 @@ header > a {
   display: none;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .section3__entete {
     width: 75%;
     margin: auto;
@@ -666,13 +666,13 @@ header > a {
   border-bottom: 3px solid #99E2D0;
 }
 
-@media (min-width: 750px) and (max-width: 992px) {
+@media (min-width: 750px) and (max-width: 991px) {
   .section3__liste__titre {
     text-align: center;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .section3__liste__titre {
     text-align: center;
   }
@@ -708,7 +708,7 @@ header > a {
   font-weight: 700;
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .section3 {
     width: 75%;
     margin: auto;
@@ -722,7 +722,7 @@ header > a {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .entete-img {
     height: 650px;
   }

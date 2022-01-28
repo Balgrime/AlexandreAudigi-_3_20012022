@@ -15,13 +15,13 @@
 }
 
 @mixin tablet-version{
-    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    @media (min-width: $breakpoint-tablet) and (max-width: ($breakpoint-desktop - 1px)){
         @content;
     }
 }
 
 @mixin desktop-version{
-    @media (min-width: $breakpoint-desktop) and (max-width: $breakpoint-large){
+    @media (min-width: $breakpoint-desktop) and (max-width: ($breakpoint-large - 1px)){
         @content;
     }
 }
