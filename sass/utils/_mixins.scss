@@ -13,3 +13,21 @@
 @mixin darker-tertiary($color: $tertiary) {
     color: darken($color, $amount: 45%);
 }
+
+@mixin tablet-version{
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+        @content;
+    }
+}
+
+@mixin desktop-version{
+    @media (min-width: $breakpoint-desktop) and (max-width: $breakpoint-large){
+        @content;
+    }
+}
+
+@mixin large-version{
+    @media (min-width: $breakpoint-large){
+        @content;
+    }
+}
