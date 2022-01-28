@@ -19,6 +19,7 @@ header{
             margin-left: 1.5rem;
         }
     }
+
     &__reservation{
         margin-bottom: 3rem;
         display: flex;
@@ -42,6 +43,13 @@ header{
         @include box-shadow;
         @include border-radius;
     }
+    @include large-version{
+        width: 80%;
+        margin: auto;
+        @include box-shadow;
+        @include border-radius;
+    }
+
     &__fonctionnement{
         @include tablet-version{
             width: 70%;
@@ -53,6 +61,22 @@ header{
         @include desktop-version{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            &>h2{
+                grid-column-start: 2;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        @include large-version{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 80%;
+            margin: auto;
+            &>h2{
+                grid-column-start: 2;
+                text-align: center;
+                margin: 0;
+            }
         }
     }
 }

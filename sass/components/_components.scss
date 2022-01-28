@@ -12,7 +12,21 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-top: 1.5rem;
-    
+    @include tablet-version{
+        max-width: 30rem;
+    }
+    @include desktop-version{
+        padding: 0.4rem 0 0.4rem 0;
+        grid-row-start: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    @include large-version{
+        grid-row-start: 2;
+        max-width: 20rem;
+    }
+
     &__rond{
         background-color: $primary;
         color: white;
@@ -26,6 +40,11 @@
         margin-left: -0.7rem;
         grid-row-start: 1;
         grid-column-start: 1;
+        @include desktop-version{
+            margin: 0;
+            order: 3;
+            align-self: flex-start;
+        }
     }
 
     &__typo{
@@ -41,6 +60,9 @@
         grid-column-start: 1;
         justify-self: center;
         grid-row-start: 1;
+        @include desktop-version{
+            font-size: 1.6rem;
+        }
     }
 }
 
