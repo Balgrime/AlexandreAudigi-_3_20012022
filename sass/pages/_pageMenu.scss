@@ -25,6 +25,7 @@ header{
     grid-row-gap: 2rem;
     &>button{
         width: 40%;
+        max-width: 20rem;
         margin: auto;
         &>p{
             font-weight: 700;
@@ -51,6 +52,16 @@ header{
         .fas{
             display: none;
         }
+        @include desktop-version{
+            width: 75%;
+            margin: auto;
+            margin-top: -4rem;
+        }
+        @include large-version{
+            width: 80%;
+            margin: auto;
+            margin-top: -4rem;
+        }
     }
     &__liste{
         &__titre{
@@ -60,6 +71,15 @@ header{
             &>span{
                 padding-bottom: 0.2rem;
                 border-bottom: 3px solid $tertiary;
+            }
+            @include tablet-version{
+                text-align: center;
+            }
+            @include desktop-version{
+                text-align: center;
+            }
+            @include large-version{
+                text-align: center;
             }
         }
         &__article{
@@ -74,5 +94,22 @@ header{
                 font-weight: 700;
             }
         }
+    }
+    @include desktop-version{
+        width: 75%;
+        margin: auto;
+    }
+    @include large-version{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.entete-img{
+    @include desktop-version{
+        height: 650px;
+        }
+    @include large-version{
+    height: 650px;
     }
 }

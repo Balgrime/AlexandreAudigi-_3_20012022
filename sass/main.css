@@ -61,6 +61,33 @@ article {
   margin: 1rem;
 }
 
+@media (min-width: 750px) and (max-width: 992px) {
+  .responsive-modifier {
+    max-width: 43.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .responsive-modifier {
+    max-width: 43.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .responsive-modifier {
+    max-width: 43.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +596,7 @@ header > a {
 
 .section3 > button {
   width: 40%;
+  max-width: 20rem;
   margin: auto;
 }
 
@@ -611,6 +639,22 @@ header > a {
   display: none;
 }
 
+@media (min-width: 992px) and (max-width: 1400px) {
+  .section3__entete {
+    width: 75%;
+    margin: auto;
+    margin-top: -4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section3__entete {
+    width: 80%;
+    margin: auto;
+    margin-top: -4rem;
+  }
+}
+
 .section3__liste__titre {
   margin-top: 3.5rem;
   font-size: 1.1rem;
@@ -620,6 +664,24 @@ header > a {
 .section3__liste__titre > span {
   padding-bottom: 0.2rem;
   border-bottom: 3px solid #99E2D0;
+}
+
+@media (min-width: 750px) and (max-width: 992px) {
+  .section3__liste__titre {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .section3__liste__titre {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section3__liste__titre {
+    text-align: center;
+  }
 }
 
 .section3__liste__article {
@@ -644,5 +706,31 @@ header > a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: 700;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .section3 {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section3 {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .entete-img {
+    height: 650px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .entete-img {
+    height: 650px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
