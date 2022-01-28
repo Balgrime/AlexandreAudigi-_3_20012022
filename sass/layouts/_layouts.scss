@@ -11,7 +11,6 @@ header{
         justify-content: center;
         align-items: baseline;
         background-color: $background-color1;
-        margin-top: 0.8rem;
         font-weight: 700;
         padding: 1rem;
         color: $background-fonce;
@@ -45,7 +44,7 @@ header{
 }
 
 .footer{
-    padding: 2rem;
+    padding: 2rem 2rem 1.4rem 2rem;
     background-color: $background-fonce;
     display: flex;
     flex-flow: column nowrap;

@@ -10,26 +10,28 @@
     </head>
     <body>
         <header>
-            <i class="fas fa-arrow-left"></i>
-            <img src="/public/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <a href="#">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <img src="/public/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="logo">
         </header>
         <main>
             <img src="/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Assiette de présentation du menu 'À la française'">
-            <div>
-                <div>
+            <div class="section3">
+                <div class="section3__entete">
                     <h1>À la française</h1>
                     <i class="far fa-heart"></i>
                     <i class="fas fa-heart"></i>
                 </div>
-                <div>
-                    <h2>ENTRÉES</h2>
+                <div class="section3__liste">
+                    <h2 class="section3__liste__titre"><span>ENTR</span>ÉES</h2>
                     <article>
-                        <a href="#">
-                            <h3>Tartare de poulpe acidulé</h3>
+                        <a href="#" class="section3__liste__article">
                             <div>
+                                <h3>Tartare de poulpe acidulé</h3>
                                 <p>Aux zests d'orange</p>
-                                <p>35€</p>
                             </div>
+                            <p>35€</p>
                         </a>
                     </article>
                     <article>
@@ -52,11 +54,22 @@
                     </article>
                 </div>
                 <button type="button">
-                    <span>Commander</span>
+                    <p class="button-text">Commander</p>
                 </button>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
+            <p class="footer__logo">ohmyfood</p>
+            <a href="#" class="footer__ligne">
+                <i class="fas fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </a>
+            <a href="#" class="footer__ligne">
+                <i class="fas fa-hands-helping"></i>
+                <p>Devenir partenaire</p>
+            </a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
         </footer>
         <script src="https://kit.fontawesome.com/c36d03a5b1.js" crossorigin="anonymous"></script>
     </body>
