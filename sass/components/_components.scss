@@ -4,27 +4,33 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin-bottom: 1.1rem;
     @include box-shadow;
     @include background-clair;
     @include border-radius;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
     &__rond{
         background-color: $primary;
         color: white;
-        width: 1.2rem;
-        height: 1.2rem;
-        border-radius: 15px;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 1.3rem;
         margin-left: -0.7rem;
+        margin-right: auto;
     }
 
     &__typo{
         font-weight: 700;
+        flex-grow: 1;
+        margin-right: auto;
+        text-align: center;
     }
 
     &__icone{
@@ -38,8 +44,8 @@ button{
     border-radius: 45px;
     color: white;
     @include box-shadow;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    margin-top: 2rem;
     .button-text{
         color: white;
     }

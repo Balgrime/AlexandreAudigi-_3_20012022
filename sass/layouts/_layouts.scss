@@ -12,6 +12,12 @@ header{
         align-items: center;
         background-color: $background-color1;
         margin-top: 0.8rem;
+        font-weight: 700;
+        padding: 1rem;
+        color: $background-fonce;
+        &>p{
+            color: $background-fonce;
+        }
     }
     &__reservation{
         display: flex;
@@ -24,9 +30,42 @@ header{
             font-family: 'Roboto';
             font-weight: 900;
         }
+        &>p{
+            color: $background-fonce;
+            font-weight: 300;
+        }
     }
 }
 
 .section2{
     @include background-clair;
+    padding-bottom: 4rem;
+}
+
+.footer{
+    padding: 2rem;
+    background-color: $background-fonce;
+    display: flex;
+    flex-flow: column nowrap;
+    &__ligne{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    &__logo{
+        font-family: 'Shrikhand';
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    & a, p{
+        color: white;
+        font-weight: 700;
+    }
+    & a{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        &>p{
+            margin-left: 1rem;
+        }
+    }
 }
