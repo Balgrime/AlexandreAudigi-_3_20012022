@@ -1,10 +1,10 @@
 .bouton-fonctionnement{
     width: 86%;
     margin: auto;
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: (repeat(4, 1fr));
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: center;
     margin-bottom: 1.1rem;
     @include box-shadow;
     @include background-clair;
@@ -23,18 +23,23 @@
         align-items: center;
         margin-right: 1.3rem;
         margin-left: -0.7rem;
-        margin-right: auto;
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
 
     &__typo{
         font-weight: 700;
-        flex-grow: 1;
-        margin-right: auto;
-        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        justify-self: center;
+        grid-row-start: 1;
     }
 
     &__icone{
         color: grey;
+        grid-column-start: 1;
+        justify-self: center;
+        grid-row-start: 1;
     }
 }
 

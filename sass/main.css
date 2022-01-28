@@ -161,19 +161,15 @@ header {
 .bouton-fonctionnement {
   width: 86%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 1.1rem;
   -webkit-box-shadow: 4px 4px 15px #b9b9b9;
           box-shadow: 4px 4px 15px #b9b9b9;
@@ -200,20 +196,31 @@ header {
           align-items: center;
   margin-right: 1.3rem;
   margin-left: -0.7rem;
-  margin-right: auto;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
 }
 
 .bouton-fonctionnement__typo {
   font-weight: 700;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: auto;
-  text-align: center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
 }
 
 .bouton-fonctionnement__icone {
   color: grey;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
 }
 
 button {
