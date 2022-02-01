@@ -95,8 +95,8 @@ header{
         width: 75%;
         margin: auto;
         &>div{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
     @include large-version{
@@ -105,8 +105,8 @@ header{
         width: 80%;
         margin: auto;
         &>div{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
