@@ -13,18 +13,13 @@
     padding-bottom: 1.5rem;
     margin-top: 1.5rem;
     @include tablet-version{
-        max-width: 30rem;
+        max-width: 25rem;
     }
     @include desktop-version{
-        padding: 0.4rem 0 0.4rem 0;
-        grid-row-start: 2;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
+        max-width: 25rem;
     }
     @include large-version{
-        grid-row-start: 2;
-        max-width: 20rem;
+        max-width: 25rem;
     }
 
     &__rond{
@@ -40,11 +35,6 @@
         margin-left: -0.7rem;
         grid-row-start: 1;
         grid-column-start: 1;
-        @include desktop-version{
-            margin: 0;
-            order: 3;
-            align-self: flex-start;
-        }
     }
 
     &__typo{
@@ -60,9 +50,6 @@
         grid-column-start: 1;
         justify-self: center;
         grid-row-start: 1;
-        @include desktop-version{
-            font-size: 1.6rem;
-        }
     }
 }
 

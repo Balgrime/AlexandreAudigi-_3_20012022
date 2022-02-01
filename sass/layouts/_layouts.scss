@@ -59,23 +59,17 @@ header{
             }
         }
         @include desktop-version{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            width: 70%;
+            margin: auto;
             &>h2{
-                grid-column-start: 2;
                 text-align: center;
-                margin: 0;
             }
         }
         @include large-version{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            width: 80%;
+            width: 70%;
             margin: auto;
             &>h2{
-                grid-column-start: 2;
                 text-align: center;
-                margin: 0;
             }
         }
     }
