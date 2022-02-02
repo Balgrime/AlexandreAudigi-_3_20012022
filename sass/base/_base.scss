@@ -58,6 +58,7 @@ article{
 }
 
 .responsive-modifier{
+    position: relative;
     animation: loading-plat 500ms ease-out backwards;
     @for $i from 1 through $nombre-plat{
         &--load#{$i} {
@@ -97,3 +98,4 @@ article{
         }
     }
 }
+
