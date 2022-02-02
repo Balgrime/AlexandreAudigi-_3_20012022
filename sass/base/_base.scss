@@ -84,10 +84,13 @@ article{
     }
     display: flex;
     flex-flow: row nowrap;
-    overflow: hidden; 
+    overflow: hidden;
     &:hover{
         .section3__liste__article--actif{
-            animation: check-article 240ms forwards ease-in-out;
+         margin-right: 0rem;
+        }
+        .fa-check-circle{
+            animation: rotationIcone 300ms 100ms;
         }
     }
 }

@@ -1,6 +1,6 @@
 header{
     display: grid;
-    grid-template-columns: (repeat(4, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     &>.logo{
         justify-self: center;
@@ -85,13 +85,12 @@ header{
         &__article{
             padding: 0.7rem;
             padding-right: 1.7rem;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: 8fr 1fr;
             width: 100%;
             &>p{
-                align-self: flex-end;
+                justify-self: end;
+                align-self: end;
                 font-weight: 700;
             }
             &>div{
@@ -110,9 +109,10 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 7.2rem;
+                width: 5.5rem;
                 height: 100%;
-                margin-right: -7.2rem;
+                margin-right: -5.5rem;
+                transition: 240ms ease-in-out;
                 &>i{
                     font-size: 2rem;
                     color: white;

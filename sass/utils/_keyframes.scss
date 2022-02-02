@@ -8,11 +8,11 @@
     }
 }
 
-@keyframes check-article{
+@keyframes rotationIcone{
     0%{
-        transform: translateX(0);
+        transform: rotate(-230deg);
     }
     100%{
-        transform: translateX(-7.2rem);
+        transform: rotate(0deg);
     }
 }
