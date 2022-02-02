@@ -51,6 +51,12 @@
         justify-self: center;
         grid-row-start: 1;
     }
+    &:hover{
+        cursor: pointer;
+        background: lighten($background-color2, $amount: 10%);
+        animation: rebondi 100ms ease-in-out;
+        box-shadow: 2px 2px 8px rgb(31, 31, 31);
+    }
 }
 
 button{
@@ -63,6 +69,11 @@ button{
     margin-top: 2rem;
     .button-text{
         color: white;
+    }
+    &:hover{
+        cursor: pointer;
+        animation: rebondi 100ms ease-in-out;
+        box-shadow: 2px 2px 8px rgb(31, 31, 31);
     }
 }
 

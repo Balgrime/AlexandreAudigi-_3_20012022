@@ -50,8 +50,8 @@
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
 }
 
@@ -61,8 +61,8 @@
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
 }
 
@@ -578,6 +578,15 @@ header {
       grid-row-start: 1;
 }
 
+.bouton-fonctionnement:hover {
+  cursor: pointer;
+  background: white;
+  -webkit-animation: rebondi 100ms ease-in-out;
+          animation: rebondi 100ms ease-in-out;
+  -webkit-box-shadow: 2px 2px 8px #1f1f1f;
+          box-shadow: 2px 2px 8px #1f1f1f;
+}
+
 button {
   background: linear-gradient(150deg, #FF79DA, #9356DC);
   border-style: none;
@@ -591,6 +600,14 @@ button {
 
 button .button-text {
   color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-animation: rebondi 100ms ease-in-out;
+          animation: rebondi 100ms ease-in-out;
+  -webkit-box-shadow: 2px 2px 8px #1f1f1f;
+          box-shadow: 2px 2px 8px #1f1f1f;
 }
 
 .section2__article {
