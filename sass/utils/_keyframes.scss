@@ -1,0 +1,18 @@
+@keyframes loading-plat{
+    0%{
+        transform: translateY(8vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes check-article{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-7.2rem);
+    }
+}

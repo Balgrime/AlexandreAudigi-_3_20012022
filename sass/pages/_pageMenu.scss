@@ -89,9 +89,34 @@ header{
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: flex-start;
+            width: 100%;
             &>p{
                 align-self: flex-end;
                 font-weight: 700;
+            }
+            &>div{
+                white-space: nowrap;
+                overflow: hidden;
+                &>*{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            &--actif{
+                background-color: $tertiary;
+                @include border-radius;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 7.2rem;
+                height: 100%;
+                margin-right: -7.2rem;
+                &>i{
+                    font-size: 2rem;
+                    color: white;
+                }
             }
         }
     }

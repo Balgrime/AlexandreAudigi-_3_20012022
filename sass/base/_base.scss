@@ -58,6 +58,12 @@ article{
 }
 
 .responsive-modifier{
+    animation: loading-plat 500ms ease-out backwards;
+    @for $i from 1 through $nombre-plat{
+        &--load#{$i} {
+            animation-delay: $delai-plat * $i;
+        }
+    }
     @include tablet-version{
         max-width: 43.5rem;
         margin: auto;
@@ -75,5 +81,13 @@ article{
         margin: auto;
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden; 
+    &:hover{
+        .section3__liste__article--actif{
+            animation: check-article 240ms forwards ease-in-out;
+        }
     }
 }
