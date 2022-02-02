@@ -44,6 +44,28 @@
   }
 }
 
+@-webkit-keyframes rebondi {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes rebondi {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -203,6 +225,10 @@ article {
 .responsive-modifier:hover .fa-check-circle {
   -webkit-animation: rotationIcone 300ms 100ms;
           animation: rotationIcone 300ms 100ms;
+}
+
+.responsive-modifier:hover .section3__liste__article > p {
+  padding-left: 0.4rem;
 }
 
 header {
@@ -581,18 +607,6 @@ button .button-text {
   border-radius: 15px 15px 0 0;
 }
 
-.section2__article .fa-heart {
-  font-size: 1.8rem;
-}
-
-.section2__article .far {
-  color: grey;
-}
-
-.section2__article .fas {
-  display: none;
-}
-
 .section2__article__nouveau {
   position: absolute;
   -ms-grid-column-align: end;
@@ -623,6 +637,66 @@ button .button-text {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 1.3rem 1rem 0.8rem;
+}
+
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.4rem;
+}
+
+.heart .fa-heart {
+  font-size: 1.8rem;
+}
+
+.heart .far {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+}
+
+.heart .fas {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(150deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+input {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+input:checked ~ .far {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 0;
+}
+
+input:checked ~ .fas {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 1;
+}
+
+input:hover ~ .fas {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  opacity: 1;
 }
 
 header {
@@ -699,18 +773,6 @@ header > a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.section3__entete .fa-heart {
-  font-size: 1.8rem;
-}
-
-.section3__entete .far {
-  color: grey;
-}
-
-.section3__entete .fas {
-  display: none;
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {

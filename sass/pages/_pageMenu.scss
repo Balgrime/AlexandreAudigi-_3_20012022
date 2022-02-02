@@ -43,15 +43,6 @@ header{
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
-        .fa-heart{
-            font-size: 1.8rem;
-        }
-        .far{
-            color: grey;
-        }
-        .fas{
-            display: none;
-        }
         @include desktop-version{
             width: 75%;
             margin: auto;
