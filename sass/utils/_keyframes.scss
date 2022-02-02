@@ -25,3 +25,15 @@
         transform: scale(1.02);
     }
 }
+
+@keyframes animloader{
+    0%{
+        transform: translateY(2vh);
+    }
+    50%{
+        transform: translateY(10);
+    }
+    100%{
+        transform: translateY(-3vh);
+    }
+}

@@ -31,9 +31,3 @@
         @content;
     }
 }
-
-@mixin mobile-version{
-    @media (max-width: ($breakpoint-tablet - 1px)){
-        @content;
-    }
-}

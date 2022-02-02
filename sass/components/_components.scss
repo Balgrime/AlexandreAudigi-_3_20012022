@@ -1,3 +1,47 @@
+.loader{
+    position: absolute;
+    background-color: $background-color2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    z-index: 6;
+    color: $primary;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    @for $a from 1 through 9{
+        .load-#{$a} {
+            animation: animloader 430ms ease both alternate-reverse infinite;
+            animation-delay: $delai-load * $a;
+        }
+    }
+}
+.loaderb{
+    position: absolute;
+    margin-top: 3.1rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    z-index: 7;
+    color: $tertiary;
+    transform: rotateX(180deg);
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    @for $a from 1 through 9{
+        .loadb-#{$a} {
+            animation: animloader 430ms ease both alternate-reverse infinite;
+            animation-delay: $delai-load * $a;
+        }
+    }
+}
+
 .bouton-fonctionnement{
     width: 86%;
     margin: auto;
@@ -133,8 +177,6 @@ button{
         opacity: 0;
     }
 }
-
-
 
 .heart-checkbox{
     position: absolute;
