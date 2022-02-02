@@ -128,110 +128,6 @@ article {
   margin: 1rem;
 }
 
-.responsive-modifier {
-  position: relative;
-  -webkit-animation: loading-plat 500ms ease-out backwards;
-          animation: loading-plat 500ms ease-out backwards;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  overflow: hidden;
-}
-
-.responsive-modifier--load1 {
-  -webkit-animation-delay: 160ms;
-          animation-delay: 160ms;
-}
-
-.responsive-modifier--load2 {
-  -webkit-animation-delay: 320ms;
-          animation-delay: 320ms;
-}
-
-.responsive-modifier--load3 {
-  -webkit-animation-delay: 480ms;
-          animation-delay: 480ms;
-}
-
-.responsive-modifier--load4 {
-  -webkit-animation-delay: 640ms;
-          animation-delay: 640ms;
-}
-
-.responsive-modifier--load5 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.responsive-modifier--load6 {
-  -webkit-animation-delay: 960ms;
-          animation-delay: 960ms;
-}
-
-.responsive-modifier--load7 {
-  -webkit-animation-delay: 1120ms;
-          animation-delay: 1120ms;
-}
-
-.responsive-modifier--load8 {
-  -webkit-animation-delay: 1280ms;
-          animation-delay: 1280ms;
-}
-
-.responsive-modifier--load9 {
-  -webkit-animation-delay: 1440ms;
-          animation-delay: 1440ms;
-}
-
-.responsive-modifier--load10 {
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
-}
-
-@media (min-width: 750px) and (max-width: 991px) {
-  .responsive-modifier {
-    max-width: 43.5rem;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1399px) {
-  .responsive-modifier {
-    max-width: 43.5rem;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .responsive-modifier {
-    max-width: 43.5rem;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.responsive-modifier:hover .section3__liste__article--actif {
-  margin-right: 0rem;
-}
-
-.responsive-modifier:hover .fa-check-circle {
-  -webkit-animation: rotationIcone 300ms 100ms;
-          animation: rotationIcone 300ms 100ms;
-}
-
-.responsive-modifier:hover .section3__liste__article > p {
-  padding-left: 0.4rem;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,16 +815,129 @@ header > a {
   }
 }
 
+.responsive-modifier {
+  position: relative;
+  -webkit-animation: loading-plat 500ms ease-out backwards;
+          animation: loading-plat 500ms ease-out backwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+.responsive-modifier--load1 {
+  -webkit-animation-delay: 160ms;
+          animation-delay: 160ms;
+}
+
+.responsive-modifier--load2 {
+  -webkit-animation-delay: 320ms;
+          animation-delay: 320ms;
+}
+
+.responsive-modifier--load3 {
+  -webkit-animation-delay: 480ms;
+          animation-delay: 480ms;
+}
+
+.responsive-modifier--load4 {
+  -webkit-animation-delay: 640ms;
+          animation-delay: 640ms;
+}
+
+.responsive-modifier--load5 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.responsive-modifier--load6 {
+  -webkit-animation-delay: 960ms;
+          animation-delay: 960ms;
+}
+
+.responsive-modifier--load7 {
+  -webkit-animation-delay: 1120ms;
+          animation-delay: 1120ms;
+}
+
+.responsive-modifier--load8 {
+  -webkit-animation-delay: 1280ms;
+          animation-delay: 1280ms;
+}
+
+.responsive-modifier--load9 {
+  -webkit-animation-delay: 1440ms;
+          animation-delay: 1440ms;
+}
+
+.responsive-modifier--load10 {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+@media (min-width: 750px) and (max-width: 991px) {
+  .responsive-modifier {
+    max-width: 43.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .responsive-modifier {
+    max-width: 43.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .responsive-modifier {
+    max-width: 43.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.responsive-modifier:hover .section3__liste__article--actif {
+  margin-right: 0rem;
+}
+
+.responsive-modifier:hover .fa-check-circle {
+  -webkit-animation: rotationIcone 300ms 100ms;
+          animation: rotationIcone 300ms 100ms;
+}
+
+.responsive-modifier:hover .section3__liste__article > p {
+  padding-left: 0.4rem;
+}
+
 .plat-checkbox {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   cursor: pointer;
   z-index: 5;
   width: 100%;
   height: 100%;
 }
 
-.plat-checkbox:checked .section3__liste__article--actif {
+.plat-checkbox:checked ~ div > .section3__liste__article--actif {
   margin-right: 0rem;
+}
+
+.plat-checkbox:checked ~ div > .section3__liste__article--actif .fa-check-circle {
+  -webkit-animation: rotationIcone 300ms 100ms;
+          animation: rotationIcone 300ms 100ms;
+}
+
+.plat-checkbox:checked ~ div > .section3__liste__article--actif .section3__liste__article > p {
+  padding-left: 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */
