@@ -23,7 +23,7 @@ header{
     grid-template-columns: 1fr;
     justify-content: center;
     grid-row-gap: 2rem;
-    &>button{
+    &>.button{
         width: 40%;
         max-width: 20rem;
         margin: auto;

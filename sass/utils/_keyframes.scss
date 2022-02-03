@@ -28,13 +28,10 @@
 
 @keyframes animloader{
     0%{
-        transform: translateY(2vh);
-    }
-    50%{
-        transform: translateY(10);
+        transform: translateY(1.4rem);
     }
     100%{
-        transform: translateY(-3vh);
+        transform: translateY(-1.4rem);
     }
 }
 

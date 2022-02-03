@@ -1,12 +1,8 @@
 .loader{
     position: fixed;
-    background-color: $background-color2;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
     font-size: 2.5rem;
     z-index: 6;
     color: $primary;
@@ -21,17 +17,14 @@
 }
 .loaderb{
     position: fixed;
-    margin-top: 3.1rem;
-    height: 100%;
-    width: 100%;
     display: flex;
+    margin-top: 8.7rem;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
     font-size: 2.5rem;
     z-index: 7;
-    color: $tertiary;
     transform: rotateX(180deg);
+    color: $tertiary;
     letter-spacing: 0.2rem;
     font-weight: 900;
     @for $a from 1 through 9{
@@ -43,7 +36,16 @@
 }
 
 .ecranLoad{
-    animation: visibleLoad 200ms 2s both;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color2;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    animation: visibleLoad 200ms 0.5s forwards;
 }
 
 .bouton-fonctionnement{
@@ -107,7 +109,11 @@
     }
 }
 
-button{
+.button{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    white-space: nowrap;
     background: linear-gradient(150deg, #FF79DA, #9356DC);
     border-style: none;
     border-radius: 45px;
@@ -156,15 +162,16 @@ button{
     padding: 1rem 1.3rem 1rem 0.8rem;
 }
 
-
-
 .heart{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0.4rem;
+    justify-content: flex-end;
+    margin-right: 1.4rem;
     .fa-heart{
+        margin-top: -3rem;
         font-size: 1.8rem;
+        &--menu{
+            margin-top: 0rem;
+        }
     }
     .far{
         position: absolute;
@@ -186,6 +193,7 @@ button{
     position: absolute;
     width: 2rem;
     height: 2rem;
+    margin-top: -3rem;
     opacity: 0;
     cursor: pointer;
     z-index: 3;
@@ -200,5 +208,8 @@ button{
     &:hover ~ .fas{
         transition: 400ms;
         opacity: 1;
+    }
+    &--menu{
+        margin-top: 0rem;
     }
 }
