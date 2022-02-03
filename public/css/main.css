@@ -794,7 +794,7 @@ header {
 }
 
 .heart .fa-heart--menu {
-  margin-top: 0rem;
+  margin-top: -1rem;
 }
 
 .heart .far {
@@ -842,7 +842,7 @@ header {
 }
 
 .heart-checkbox--menu {
-  margin-top: 0rem;
+  margin-top: -1rem;
 }
 
 header {
