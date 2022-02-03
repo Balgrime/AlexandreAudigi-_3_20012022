@@ -83,6 +83,7 @@ header{
                 justify-self: end;
                 align-self: end;
                 font-weight: 700;
+                padding-left: 0.4rem;
             }
             &>div{
                 white-space: nowrap;
@@ -166,9 +167,6 @@ header{
         .fa-check-circle{
             animation: rotationIcone 300ms 100ms;
         }
-        .section3__liste__article>p{
-            padding-left: 0.4rem;
-        }
     }
 }
 
@@ -183,9 +181,6 @@ header{
         margin-right: 0rem;
         .fa-check-circle{
             animation: rotationIcone 300ms 100ms;
-        }
-        .section3__liste__article>p{
-            padding-left: 0.4rem;
         }
     }
 }

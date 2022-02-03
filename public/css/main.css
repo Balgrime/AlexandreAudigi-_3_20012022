@@ -966,6 +966,7 @@ header > a {
       -ms-grid-row-align: end;
       align-self: end;
   font-weight: 700;
+  padding-left: 0.4rem;
 }
 
 .section3__liste__article > div {
@@ -1130,10 +1131,6 @@ header > a {
           animation: rotationIcone 300ms 100ms;
 }
 
-.responsive-modifier:hover .section3__liste__article > p {
-  padding-left: 0.4rem;
-}
-
 .plat-checkbox {
   position: absolute;
   opacity: 0;
@@ -1150,9 +1147,5 @@ header > a {
 .plat-checkbox:checked ~ div > .section3__liste__article--actif .fa-check-circle {
   -webkit-animation: rotationIcone 300ms 100ms;
           animation: rotationIcone 300ms 100ms;
-}
-
-.plat-checkbox:checked ~ div > .section3__liste__article--actif .section3__liste__article > p {
-  padding-left: 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */
