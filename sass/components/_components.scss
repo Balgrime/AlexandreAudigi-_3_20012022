@@ -1,5 +1,5 @@
 .loader{
-    position: absolute;
+    position: fixed;
     background-color: $background-color2;
     height: 100%;
     width: 100%;
@@ -20,7 +20,7 @@
     }
 }
 .loaderb{
-    position: absolute;
+    position: fixed;
     margin-top: 3.1rem;
     height: 100%;
     width: 100%;
@@ -40,6 +40,10 @@
             animation-delay: $delai-load * $a;
         }
     }
+}
+
+.ecranLoad{
+    animation: visibleLoad 200ms 2s both;
 }
 
 .bouton-fonctionnement{
