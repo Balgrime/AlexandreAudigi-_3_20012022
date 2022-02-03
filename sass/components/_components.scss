@@ -1,41 +1,4 @@
-.loader{
-    position: fixed;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    font-size: 2.5rem;
-    z-index: 6;
-    color: $primary;
-    letter-spacing: 0.2rem;
-    font-weight: 900;
-    @for $a from 1 through 9{
-        .load-#{$a} {
-            animation: animloader 430ms ease both alternate-reverse infinite;
-            animation-delay: $delai-load * $a;
-        }
-    }
-}
-.loaderb{
-    position: fixed;
-    display: flex;
-    margin-top: 8.7rem;
-    flex-flow: row nowrap;
-    justify-content: center;
-    font-size: 2.5rem;
-    z-index: 7;
-    transform: rotateX(180deg);
-    color: $tertiary;
-    letter-spacing: 0.2rem;
-    font-weight: 900;
-    @for $a from 1 through 9{
-        .loadb-#{$a} {
-            animation: animloader 430ms ease both alternate-reverse infinite;
-            animation-delay: $delai-load * $a;
-        }
-    }
-}
-
-.ecranLoad{
+.ecran-load{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -45,14 +8,50 @@
     width: 100%;
     position: fixed;
     z-index: 4;
-    animation: visibleLoad 200ms 0.5s forwards;
+    animation: visibleLoad 200ms 2s forwards;
+    &__partie1{
+        position: fixed;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        font-size: 2.5rem;
+        z-index: 6;
+        color: $primary;
+        letter-spacing: 0.2rem;
+        font-weight: 900;
+        @for $a from 1 through 9{
+            .load-#{$a} {
+                animation: animloader 430ms ease both alternate-reverse infinite;
+                animation-delay: $delai-load * $a;
+            }
+        }
+    }
+    &__partie2{
+        position: fixed;
+        display: flex;
+        margin-top: 8.7rem;
+        flex-flow: row nowrap;
+        justify-content: center;
+        font-size: 2.5rem;
+        z-index: 7;
+        transform: rotateX(180deg);
+        color: $tertiary;
+        letter-spacing: 0.2rem;
+        font-weight: 900;
+        @for $a from 1 through 9{
+            .loadb-#{$a} {
+                animation: animloader 430ms ease both alternate-reverse infinite;
+                animation-delay: $delai-load * $a;
+            }
+        }
+    }
 }
 
 .bouton-fonctionnement{
     width: 86%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     margin-bottom: 1.1rem;

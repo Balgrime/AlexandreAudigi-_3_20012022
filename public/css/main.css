@@ -326,8 +326,8 @@ header {
   .section2 > div {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -433,7 +433,30 @@ header {
   }
 }
 
-.loader {
+.ecran-load {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  -webkit-animation: visibleLoad 200ms 2s forwards;
+          animation: visibleLoad 200ms 2s forwards;
+}
+
+.ecran-load__partie1 {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,61 +475,61 @@ header {
   font-weight: 900;
 }
 
-.loader .load-1 {
+.ecran-load__partie1 .load-1 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 50ms;
           animation-delay: 50ms;
 }
 
-.loader .load-2 {
+.ecran-load__partie1 .load-2 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
 }
 
-.loader .load-3 {
+.ecran-load__partie1 .load-3 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
-.loader .load-4 {
+.ecran-load__partie1 .load-4 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
-.loader .load-5 {
+.ecran-load__partie1 .load-5 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 250ms;
           animation-delay: 250ms;
 }
 
-.loader .load-6 {
+.ecran-load__partie1 .load-6 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
-.loader .load-7 {
+.ecran-load__partie1 .load-7 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 350ms;
           animation-delay: 350ms;
 }
 
-.loader .load-8 {
+.ecran-load__partie1 .load-8 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
-.loader .load-9 {
+.ecran-load__partie1 .load-9 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
 }
 
-.loaderb {
+.ecran-load__partie2 {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,81 +551,58 @@ header {
   font-weight: 900;
 }
 
-.loaderb .loadb-1 {
+.ecran-load__partie2 .loadb-1 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 50ms;
           animation-delay: 50ms;
 }
 
-.loaderb .loadb-2 {
+.ecran-load__partie2 .loadb-2 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
 }
 
-.loaderb .loadb-3 {
+.ecran-load__partie2 .loadb-3 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
-.loaderb .loadb-4 {
+.ecran-load__partie2 .loadb-4 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
-.loaderb .loadb-5 {
+.ecran-load__partie2 .loadb-5 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 250ms;
           animation-delay: 250ms;
 }
 
-.loaderb .loadb-6 {
+.ecran-load__partie2 .loadb-6 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
-.loaderb .loadb-7 {
+.ecran-load__partie2 .loadb-7 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 350ms;
           animation-delay: 350ms;
 }
 
-.loaderb .loadb-8 {
+.ecran-load__partie2 .loadb-8 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 400ms;
           animation-delay: 400ms;
 }
 
-.loaderb .loadb-9 {
+.ecran-load__partie2 .loadb-9 {
   animation: animloader 430ms ease both alternate-reverse infinite;
   -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
-}
-
-.ecranLoad {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f6f6f6;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 4;
-  -webkit-animation: visibleLoad 200ms 0.5s forwards;
-          animation: visibleLoad 200ms 0.5s forwards;
 }
 
 .bouton-fonctionnement {
@@ -610,8 +610,8 @@ header {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   -webkit-box-align: center;
@@ -848,8 +848,8 @@ header {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
