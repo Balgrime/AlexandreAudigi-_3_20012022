@@ -252,7 +252,7 @@ header {
   }
 }
 
-@media (min-width: 750px) and (max-width: 991px) {
+@media (min-width: 565px) and (max-width: 991px) {
   .section1__fonctionnement {
     width: 70%;
     margin: auto;
@@ -266,6 +266,8 @@ header {
   .section1__fonctionnement {
     width: 70%;
     margin: auto;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.2rem;
   }
   .section1__fonctionnement > h2 {
     text-align: center;
@@ -276,6 +278,8 @@ header {
   .section1__fonctionnement {
     width: 70%;
     margin: auto;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.2rem;
   }
   .section1__fonctionnement > h2 {
     text-align: center;
@@ -289,7 +293,7 @@ header {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 750px) and (max-width: 991px) {
+@media (min-width: 565px) and (max-width: 991px) {
   .section2 > h2 {
     text-align: center;
   }
@@ -343,7 +347,7 @@ header {
           flex-flow: column nowrap;
 }
 
-@media (min-width: 750px) and (max-width: 991px) {
+@media (min-width: 565px) and (max-width: 991px) {
   .footer {
     display: -ms-grid;
     display: grid;
@@ -627,7 +631,7 @@ header {
   margin-top: 1.5rem;
 }
 
-@media (min-width: 750px) and (max-width: 991px) {
+@media (min-width: 565px) and (max-width: 991px) {
   .bouton-fonctionnement {
     max-width: 25rem;
   }
@@ -948,7 +952,7 @@ header > a {
   border-bottom: 3px solid #99E2D0;
 }
 
-@media (min-width: 750px) and (max-width: 991px) {
+@media (min-width: 565px) and (max-width: 991px) {
   .section3__liste__titre {
     text-align: center;
   }
@@ -1036,16 +1040,8 @@ header > a {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1399px) {
-  .entete-img {
-    height: 650px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .entete-img {
-    height: 650px;
-  }
+.entete-img {
+  max-height: 650px;
 }
 
 .responsive-modifier {
@@ -1112,9 +1108,9 @@ header > a {
           animation-delay: 1600ms;
 }
 
-@media (min-width: 750px) and (max-width: 991px) {
+@media (min-width: 565px) and (max-width: 991px) {
   .responsive-modifier {
-    max-width: 43.5rem;
+    max-width: 32.5rem;
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;

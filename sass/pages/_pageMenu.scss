@@ -123,12 +123,7 @@ header{
 }
 
 .entete-img{
-    @include desktop-version{
-        height: 650px;
-        }
-    @include large-version{
-    height: 650px;
-    }
+    max-height: 650px;
 }
 
 .responsive-modifier{
@@ -140,7 +135,7 @@ header{
         }
     }
     @include tablet-version{
-        max-width: 43.5rem;
+        max-width: 32.5rem;
         margin: auto;
         margin-top: 1rem;
         margin-bottom: 1rem;
